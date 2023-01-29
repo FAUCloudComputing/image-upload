@@ -37,9 +37,9 @@ app.post('/upload', (req, res) => {
     
     // Move the uploaded image to upload folder
     // This is where the API call to the tier3 service will be made
-        const res =  fetch(tier3endpoint, {
-        method: 'POST',
-        body: image.name
+        fetch(tier3endpoint, {
+            method: 'POST',
+            body: image.name
         });
 
 
